@@ -1,0 +1,66 @@
+accesory_sony
+accessory_55eg9600
+accessory_65eg9600
+accessory_d43-c1
+accessory_gpx
+accessory_lg
+accessory_samsung
+accessory_sony
+accessory_vizio
+lg 43uf6430
+lg 43uf7600
+lg 55uf6430
+lg 58uf8300
+samsung hg28nc673a
+samsung un40h5203
+samsung un40h6203
+samsung un40ju640da
+samsung un40ju6500
+samsung un40ju7500
+samsung un48j5500
+samsung un48js9000
+samsung un50eh5000
+samsung un50h6400
+samsung un50hu6900
+samsung un50hu6950
+samsung un50hu8550
+samsung un50ju7500
+samsung un55h6350
+samsung un55hu7250
+samsung un55hu8700
+samsung un55hu9000
+samsung un55j6300
+samsung un55js8500
+samsung un55js9000 
+samsung un55ju6700
+samsung un55ju7500
+samsung un60fh6200
+samsung un60hu8550
+samsung un65f9000
+samsung un65h6203
+samsung un65hu9000
+samsung un65js8500
+samsung un65ju6400
+samsung un65ju6700
+samsung un65ju7500
+samsung un78hu9000
+sony kdl40w600b
+sony xbr49x850b
+sony xbr55hx950
+sony xbr55x850a
+sony xbr65x850b
+sony xbr65x850d
+sony xbr65x900a
+sony xbr75x850c
+sony xbr75x850d
+sony xbr75x910c
+sony xbr75x940c
+sony xbr85x850d
+vizio e320-b0
+vizio e32-c1
+vizio e32-c1
+vizio e700i-b3
+vizio e700i-b3
+vizio m43-c1
+vizio m43-c1
+vizio m55-c2

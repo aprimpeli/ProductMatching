@@ -1,0 +1,3 @@
+﻿"watt"|"w","watt","Βατ"
+"kilowatt"|"kw","kilowatt"|1000.0
+"megawatt"|"mw","megawatt"|1000000.0

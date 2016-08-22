@@ -1,0 +1,5 @@
+﻿"gram"|"g","gr","gram","γραμμάρια","γρ"
+"milligram"|"mg","milligram","χιλιόγραμμάρια"|0.001
+"kilogram"|"kg","kilogram","κιλά"|1000.0
+"pound"|"lb","lbs","lbm","pound"|453.6
+"ounce"|"oz","ounce"|28.35
