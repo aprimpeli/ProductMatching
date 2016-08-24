@@ -31,14 +31,14 @@ public class BoWInitializer {
 	//configure
 	static String productCategory="phone"; //tv, phone, headphone
 	static String mode="normal"; // define the mode (wrapper/normal)
-	static String dataPath="2.ProfilingOfData\\LabelledDataProfiling\\";
-	static String experimentsPath="3.MatchingModels\\ExperimentsResults\\";
+	static String dataPath="resources/data/";
+	static String experimentsPath="";
 	
 	//do not configure but keep the same file structure
 	static String modelType="BagOfWordsModel";
 	static String catalog=dataPath+"ProductCatalog/"+productCategory+"Catalog.json";
-	static String htmlFolder=dataPath+"HTML_Pages/Unified_extra/"+productCategory+"s";
-	static String labelled=dataPath+"/CorrectedLabelledEntities/UnifiedGoldStandard_extra/"+productCategory+"s.txt";
+	static String htmlFolder=dataPath+"HTML_Pages/"+productCategory+"s";
+	static String labelled=dataPath+"/LabelledEntities/"+productCategory+"s.txt";
 	static String currentExperimentPath; //allHTMLContent,MarkedUpContent,TablesandListsContent
 	static String logFile="";
 
@@ -81,8 +81,8 @@ public class BoWInitializer {
 			experimentsPath=args[3];
 			htmlParsingElements=args[4];
 			catalog=dataPath+"/ProductCatalog/"+productCategory+"Catalog.json";
-			htmlFolder=dataPath+"/HTML_Pages/Unified_extra/"+productCategory+"s";
-			labelled=dataPath+"/CorrectedLabelledEntities/UnifiedGoldStandard_extra/"+productCategory+"s.txt";
+			htmlFolder=dataPath+"/HTML_Pages/"+productCategory+"s";
+			labelled=dataPath+"/LabelledEntities/"+productCategory+"s.txt";
 		}
 		String[] allHtmlParsingElements=htmlParsingElements.split(";");
 		

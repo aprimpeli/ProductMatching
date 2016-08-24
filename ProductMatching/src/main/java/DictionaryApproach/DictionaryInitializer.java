@@ -36,16 +36,15 @@ public class DictionaryInitializer {
 	static String similarityComputation="bow";
 	static String productCategory="phone"; //tv, phone, headphone
 	static String mode="normal"; // define the mode (wrapper/normal). In the wrapper mode only the 4 plds for which a wrapper exists are considered (ebay, tesco, alibaba, overstock)
-	static String dataPath="2.ProfilingOfData/LabelledDataProfiling/";
-	//static String experimentsPath="C:/Users/Johannes/Google Drive/Master_Thesis/3.MatchingModels/ExperimentsResults/Dictionary/"+mode+"/"+productCategory+"/";
-	static String experimentsPath="3.MatchingModels/ExperimentsResults";
+	static String dataPath="resources/data/";
+	static String experimentsPath="";
 	
 	//FILEPATHS
 	static String mainPath="resources/";
 	static String modelType="DictionaryApproach";
 	static String catalog=dataPath+"ProductCatalog/"+productCategory+"Catalog.json";
-	static String htmlFolder=dataPath+"HTML_Pages/Unified_extra/"+productCategory+"s_test";
-	static String labelled=dataPath+"/CorrectedLabelledEntities/UnifiedGoldStandard_extra/"+productCategory+"s.txt";
+	static String htmlFolder=dataPath+"HTML_Pages/"+productCategory+"s";
+	static String labelled=dataPath+"/LabelledEntities/"+productCategory+"s.txt";
 	static String currentExperimentPath; //allHTMLContent,MarkedUpContent,TablesandListsContent
 	static String logFile="resources/log/logEvaluationItemsDictionary";
 
@@ -88,8 +87,8 @@ public class DictionaryInitializer {
 			experimentsPath=args[3];
 			htmlParsingElements=args[4];
 			catalog=dataPath+"/ProductCatalog/"+productCategory+"Catalog.json";
-			htmlFolder=dataPath+"/HTML_Pages/Unified_extra/"+productCategory+"s";
-			labelled=dataPath+"/CorrectedLabelledEntities/UnifiedGoldStandard_extra/"+productCategory+"s.txt";
+			htmlFolder=dataPath+"/HTML_Pages/"+productCategory+"s";
+			labelled=dataPath+"/LabelledEntities/"+productCategory+"s.txt";
 			errorLogFile="resources/errorAnalysis/dictionary_"+htmlParsingElements+"_"+productCategory+"_error_analysis.csv";
 		}
 		String[] allHtmlParsingElements=htmlParsingElements.split(";");
@@ -98,7 +97,6 @@ public class DictionaryInitializer {
 		
 			DictionaryInitializer run =new DictionaryInitializer();
 			htmlParsingElements=allHtmlParsingElements[i];
-			System.out.println(htmlParsingElements);
 			currentExperimentPath=experimentsPath+allHtmlParsingElements[i]+".csv";
 			logFile="resources/log/dict_error_analysis_scores_"+productCategory+"_"+allHtmlParsingElements[i];
 			errorLogFile="resources/errorAnalysis/dict_"+productCategory+"_"+allHtmlParsingElements[i]+"_error_analysis.csv";

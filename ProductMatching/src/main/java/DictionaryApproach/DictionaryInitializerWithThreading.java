@@ -35,15 +35,15 @@ import Evaluation.ResultItem;
 	static String similarityComputation="bow";
 	static String productCategory="phone"; //tv, phone, headphone
 	static String mode="normal"; // define the mode (wrapper/normal). In the wrapper mode only the 4 plds for which a wrapper exists are considered (ebay, tesco, alibaba, overstock)
-	static String dataPath="resources/2.ProfilingOfData/LabelledDataProfiling/";
-	static String experimentsPath="resources/3.MatchingModels/ExperimentsResults/test";
+	static String dataPath="resources/data/";
+	static String experimentsPath="";
 	
 	//FILEPATHS
 	static String mainPath="resources";
 	static String modelType="DictionaryApproach";
 	static String catalog=dataPath+"ProductCatalog/"+productCategory+"Catalog.json";
-	static String htmlFolder=dataPath+"HTML_Pages/Unified_extra/"+productCategory+"s";
-	static String labelled=dataPath+"/CorrectedLabelledEntities/UnifiedGoldStandard_extra/"+productCategory+"s.txt";
+	static String htmlFolder=dataPath+"HTML_Pages/"+productCategory+"s";
+	static String labelled=dataPath+"/LabelledEntities/"+productCategory+"s.txt";
 	static String currentExperimentPath; //allHTMLContent,MarkedUpContent,TablesandListsContent
 	static String logFile="resources/log/logEvaluationItemsDictionary";
 
@@ -92,8 +92,8 @@ import Evaluation.ResultItem;
 			experimentsPath=args[3];
 			htmlParsingElements=args[4];
 			catalog=dataPath+"/ProductCatalog/"+productCategory+"Catalog.json";
-			htmlFolder=dataPath+"/HTML_Pages/Unified_extra/"+productCategory+"s";
-			labelled=dataPath+"/CorrectedLabelledEntities/UnifiedGoldStandard_extra/"+productCategory+"s.txt";
+			htmlFolder=dataPath+"/HTML_Pages/"+productCategory+"s";
+			labelled=dataPath+"/LabelledEntities/"+productCategory+"s.txt";
 			errorLogFile="resources/errorAnalysis/dictionary_"+htmlParsingElements+"_"+productCategory+"_error_analysis.csv";
 		}
 		String[] allHtmlParsingElements=htmlParsingElements.split(";");
