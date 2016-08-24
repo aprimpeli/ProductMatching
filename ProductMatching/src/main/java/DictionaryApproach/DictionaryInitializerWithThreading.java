@@ -62,12 +62,14 @@ import Evaluation.ResultItem;
 	
 	//advanced matching
 	static boolean optimalFeatureWeighting=false;
-	static String weightsFile="C:\\Users\\Johannes\\Google Drive\\Master_Thesis\\6.AdditionalMethod\\LearnWeightsForMethods\\test\\learned_weights.csv";
+	static String weightsFile="resources/learnedWeights/learnedWeights_markup.csv";	
 	
+	static String errorLogFile="resources/errorAnalysis/dictionary_"+htmlParsingElements+"_"+productCategory+"_error_analysis.csv";
+
 	//get results only on test or only on training data
-	static boolean onlyOnTestTrainingData=false; 
-	static String TestTrainingDataPath="C:\\Users\\Johannes\\Google Drive\\Master_Thesis\\6.AdditionalMethod\\TrainingTestData\\"+productCategory+"sTest.csv";	static String errorLogFile="resources/errorAnalysis/dictionary_"+htmlParsingElements+"_"+productCategory+"_error_analysis.csv";
 	static String TestOrTraining = "Training";
+	static boolean onlyOnTestTrainingData=false; 
+	static String TestTrainingDataPath="resources/TrainingTestData/"+productCategory+"s"+TestOrTraining+".csv";
 	
 	//String evaluation type definition
 	static String evaluationType="optimizingF1"; //average, median, optimizingF1

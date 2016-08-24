@@ -31,8 +31,8 @@ public class BoWInitializer {
 	//configure
 	static String productCategory="phone"; //tv, phone, headphone
 	static String mode="normal"; // define the mode (wrapper/normal)
-	static String dataPath="";
-	static String experimentsPath="";
+	static String dataPath="C:\\Users\\Johannes\\Google Drive\\Master_Thesis\\2.ProfilingOfData\\LabelledDataProfiling\\";
+	static String experimentsPath="C:\\Users\\Johannes\\Google Drive\\Master_Thesis\\3.MatchingModels\\ExperimentsResults\\";
 	
 	//do not configure but keep the same file structure
 	static String modelType="BagOfWordsModel";
@@ -200,7 +200,7 @@ public class BoWInitializer {
 			System.out.println("False Negatives:"+results.getFalseNegatives());
 			System.out.println("False Positives:"+results.getFalsePositives());
 			System.out.println("True Positives:"+results.getTruePositives());
-			System.out.println("True Positives:"+results.getTruePositivesValues());
+		//	System.out.println("True Positives:"+results.getTruePositivesValues());
 						
 							
 			allResults.put(modelConfig, results);

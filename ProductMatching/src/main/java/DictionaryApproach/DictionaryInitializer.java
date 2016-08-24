@@ -36,9 +36,9 @@ public class DictionaryInitializer {
 	static String similarityComputation="bow";
 	static String productCategory="phone"; //tv, phone, headphone
 	static String mode="normal"; // define the mode (wrapper/normal). In the wrapper mode only the 4 plds for which a wrapper exists are considered (ebay, tesco, alibaba, overstock)
-	static String dataPath="resources/2.ProfilingOfData/LabelledDataProfiling/";
+	static String dataPath="2.ProfilingOfData/LabelledDataProfiling/";
 	//static String experimentsPath="C:/Users/Johannes/Google Drive/Master_Thesis/3.MatchingModels/ExperimentsResults/Dictionary/"+mode+"/"+productCategory+"/";
-	static String experimentsPath="resources/3.MatchingModels/ExperimentsResults/test";
+	static String experimentsPath="3.MatchingModels/ExperimentsResults";
 	
 	//FILEPATHS
 	static String mainPath="resources/";
@@ -63,14 +63,14 @@ public class DictionaryInitializer {
 	
 	//advanced matching
 	static boolean optimalFeatureWeighting=false;
-	static String weightsFile="C:\\Users\\Johannes\\Google Drive\\Master_Thesis\\6.AdditionalMethod\\LearnWeightsForMethods\\test\\learned_weights.csv";
+	static String weightsFile="resources/learnedWeights/learnedWeights_markup.csv";	
 
 	static String errorLogFile="resources/errorAnalysis/dictionary_"+htmlParsingElements+"_"+productCategory+"_error_analysis.csv";
 
 	//get results only on training or only on test data - for enhanced methods
 	static boolean onlyOnTestTrainingData=true; 
 	static String TestOrTraining = "Test";
-	static String TestTrainingDataPath="C:\\Users\\Johannes\\Google Drive\\Master_Thesis\\6.AdditionalMethod\\TrainingTestData\\"+productCategory+"s"+TestOrTraining+".csv";
+	static String TestTrainingDataPath="resources/TrainingTestData/"+productCategory+"s"+TestOrTraining+".csv";
 	//String evaluation type definition
 	static String evaluationType="optimizingF1"; //average, median, optimizingF1
 
