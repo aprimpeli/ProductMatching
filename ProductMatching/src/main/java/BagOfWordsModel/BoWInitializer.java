@@ -31,8 +31,8 @@ public class BoWInitializer {
 	//configure
 	static String productCategory="phone"; //tv, phone, headphone
 	static String mode="normal"; // define the mode (wrapper/normal)
-	static String dataPath="C:\\Users\\Johannes\\Google Drive\\Master_Thesis\\2.ProfilingOfData\\LabelledDataProfiling\\";
-	static String experimentsPath="C:\\Users\\Johannes\\Google Drive\\Master_Thesis\\3.MatchingModels\\ExperimentsResults\\";
+	static String dataPath="2.ProfilingOfData\\LabelledDataProfiling\\";
+	static String experimentsPath="3.MatchingModels\\ExperimentsResults\\";
 	
 	//do not configure but keep the same file structure
 	static String modelType="BagOfWordsModel";

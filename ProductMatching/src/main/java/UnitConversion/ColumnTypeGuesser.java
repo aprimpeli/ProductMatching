@@ -151,7 +151,7 @@ public class ColumnTypeGuesser {
 		//first get the part of the columnValue that refers to a value with its unit of measurement
 		System.out.println("Start");
 		String text=Jsoup.parse(
-				fileToText("C:/Users/Johannes/Google Drive/Master_Thesis/2.ProfilingOfData/LabelledDataProfiling/HTML_Pages/Unified_extra/headphones/node1dd3a71382fd4ecc7ed26dfea156a8.html")).text();
+				fileToText("2.ProfilingOfData/LabelledDataProfiling/HTML_Pages/Unified_extra/headphones/node1dd3a71382fd4ecc7ed26dfea156a8.html")).text();
 		text=text.toLowerCase();
 		Pattern pattern= Pattern.compile("(?:\\.*+\\d)++ *+[^ \\d]++");
 		Matcher extractedValues= pattern.matcher(Jsoup.parse(text).text());

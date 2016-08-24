@@ -36,7 +36,6 @@ import Evaluation.ResultItem;
 	static String productCategory="phone"; //tv, phone, headphone
 	static String mode="normal"; // define the mode (wrapper/normal). In the wrapper mode only the 4 plds for which a wrapper exists are considered (ebay, tesco, alibaba, overstock)
 	static String dataPath="resources/2.ProfilingOfData/LabelledDataProfiling/";
-	//static String experimentsPath="C:/Users/Johannes/Google Drive/Master_Thesis/3.MatchingModels/ExperimentsResults/Dictionary/"+mode+"/"+productCategory+"/";
 	static String experimentsPath="resources/3.MatchingModels/ExperimentsResults/test";
 	
 	//FILEPATHS
